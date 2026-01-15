@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Pintu Harmonika Premium Anti Miring | UD. Lestari Jaya Jombang</title>
-    <meta name="description" content="Spesialis Pintu Harmonika Premium dengan metode 'Langkah Satu'. Konstruksi lebih kekar, presisi, dan bergaransi. Melayani seluruh Indonesia.">
+    <title>Pintu Harmonika Premium - Anti Miring & Macet | UD. Lestari Jaya</title>
+    <meta name="description" content="Spesialis Pintu Harmonika 'Langkah Satu'. Konstruksi presisi, anti miring, material vul murni. Solusi keamanan premium untuk ruko dan gudang Anda.">
+    <meta name="keywords" content="pintu harmonika jombang, folding gate premium, pintu besi anti miring, ud lestari jaya, pintu harmonika surabaya, spesialis pintu harmonika">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="UD. Lestari Jaya">
+    
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://pintuharmonika.net">
+    <meta property="og:title" content="Pintu Harmonika Premium - The Iron Aura">
+    <meta property="og:image" content="https://dongkrakusaha.com/uploads/Pintu20251130-111100-pintu-harmonika-anti-miring-bangkalan-madura.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeGoodsStore",
+      "name": "UD. Lestari Jaya",
+      "image": "https://dongkrakusaha.com/uploads/Pintu20251130-111100-pintu-harmonika-anti-miring-bangkalan-madura.webp",
+      "telephone": "0821-3111-1185",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Perumahan Griya Trisna Asri Blok K No. 06",
+        "addressLocality": "Jombang",
+        "addressRegion": "Jawa Timur",
+        "addressCountry": "ID"
+      }
+    }
+    </script>
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
 
@@ -16,217 +41,357 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&family=Syncopate:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <style>
-        /* CORE STYLE (CLEAN) */
-        body { font-family: 'Manrope', sans-serif; background-color: #ffffff; color: #000; overflow-x: hidden; }
-        h1, h2, .display-font { font-family: 'Syncopate', sans-serif; text-transform: uppercase; }
-
-        /* CINEMATIC HERO TEXT */
-        .hero-title span {
-            display: block;
-            line-height: 0.85;
-            letter-spacing: -0.02em;
+        /* --- AURA THEME: TITANIUM DARK --- */
+        body {
+            background-color: #050505;
+            color: #fff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
         }
+        h1, h2, .tech-font { font-family: 'Orbitron', sans-serif; letter-spacing: 1px; }
 
-        /* REVEAL ANIMATION (Lebih Halus) */
-        .reveal-holder { position: relative; overflow: hidden; }
-        .reveal-block { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 2; transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1); }
-        .reveal-block.active { transform: translateX(100%); }
+        /* 1. BACKGROUND GRID (Tech Feel) */
+        .grid-bg {
+            position: fixed; inset: 0; z-index: -1;
+            background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+        }
         
-        /* MARQUEE */
-        .marquee-container { overflow: hidden; white-space: nowrap; background: #000; color: #fff; }
-        .marquee-content { display: inline-block; animation: marquee 30s linear infinite; }
-        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-
-        /* MOBILE MENU */
-        #mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        /* 2. SPOTLIGHT CARD (Mouse Tracking - Aura Style) */
+        /* Kita ubah warnanya jadi PUTIH/SILVER untuk kesan besi */
+        .spotlight-card {
+            position: relative;
+            background: rgba(20, 20, 20, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            overflow: hidden;
+            transition: transform 0.3s;
         }
-        #mobile-menu.open { transform: translateX(0); }
+        .spotlight-card::before {
+            content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.15), transparent 40%);
+            opacity: 0; transition: opacity 0.5s; pointer-events: none; z-index: 1;
+        }
+        .spotlight-card:hover::before { opacity: 1; }
+        .spotlight-card:hover { border-color: rgba(255, 255, 255, 0.3); transform: translateY(-5px); }
+        .spotlight-content { position: relative; z-index: 2; }
+
+        /* 3. SHIMMER TEXT (Efek Kilau Besi) */
+        .text-steel {
+            background: linear-gradient(to right, #94a3b8, #ffffff 50%, #94a3b8);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+        }
+        @keyframes shine { to { background-position: 200% center; } }
+
+        /* 4. BUTTON BORDER BEAM (Red Alert) */
+        .btn-beam {
+            position: relative; background: #000; color: #fff; padding: 16px 40px; border-radius: 9999px; font-weight: 700; overflow: hidden; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .btn-beam:hover { box-shadow: 0 0 30px rgba(220, 38, 38, 0.5); }
+        .btn-beam::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: conic-gradient(from 0deg, transparent 0%, transparent 70%, #ef4444 90%, #fff 100%);
+            animation: spin 3s linear infinite;
+        }
+        .btn-beam::after { content: ''; position: absolute; inset: 2px; background: #000; border-radius: 9999px; z-index: 0; }
+        .btn-text { position: relative; z-index: 1; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+        /* 5. IMAGE REVEAL CURTAIN */
+        .reveal-wrap { position: relative; overflow: hidden; border-radius: 1.5rem; }
+        .reveal-curtain { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #1a1a1a; z-index: 10; }
+        
+        /* 6. MOBILE MENU */
+        #mobile-menu { transform: translateY(-100%); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        #mobile-menu.open { transform: translateY(0); }
     </style>
 </head>
-<body class="antialiased opacity-0 transition-opacity duration-1000" id="main-body">
+<body class="antialiased opacity-0 transition-opacity duration-700" id="main-body">
 
-    <nav class="fixed w-full z-50 top-0 left-0 px-6 py-6 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-gray-100">
-        <div class="text-lg md:text-xl font-black tracking-tighter">
-            UD. LESTARI JAYA
+    <div class="grid-bg"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-red-600/10 blur-[120px] rounded-full pointer-events-none z-[-1]"></div>
+
+    <nav class="fixed w-full z-50 top-0 left-0 px-4 py-4">
+        <div class="max-w-7xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-6 py-4 flex justify-between items-center shadow-2xl">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-700 to-black border border-white/20 flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-shield-halved text-white text-lg"></i>
+                </div>
+                <div class="leading-none">
+                    <span class="block font-bold text-white tracking-wide">LESTARI JAYA</span>
+                    <span class="text-[10px] text-gray-400 font-mono tracking-widest">INDUSTRIAL SECURITY</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-300">
+                <a href="#keunggulan" class="hover:text-white transition">Teknologi</a>
+                <a href="#galeri" class="hover:text-white transition">Galeri Proyek</a>
+                <a href="#kontak" class="hover:text-white transition">Lokasi Workshop</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl text-white">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            
+            <a href="https://wa.me/6282131111185" class="hidden md:flex bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-200 transition items-center gap-2">
+                <i class="fa-brands fa-whatsapp"></i> Chat Owner
+            </a>
         </div>
-        
-        <div class="hidden md:flex gap-10 text-sm font-bold tracking-wider">
-            <a href="#keunggulan" class="hover:text-red-600 transition">KEUNGGULAN</a>
-            <a href="#proyek" class="hover:text-red-600 transition">PROYEK</a>
-            <a href="#kontak" class="hover:text-red-600 transition">LOKASI</a>
-        </div>
-
-        <a href="https://wa.me/6282131111185" class="hidden md:inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-red-700 transition">
-            <i class="fa-brands fa-whatsapp"></i> Hubungi Kami
-        </a>
-
-        <button id="menu-btn" class="text-2xl md:hidden z-50 focus:outline-none">
-            <i class="fa-solid fa-bars"></i>
-        </button>
     </nav>
 
-    <div id="mobile-menu" class="fixed inset-0 bg-black z-40 flex flex-col justify-center items-start p-12 text-white gap-8 text-4xl font-black display-font">
-        <a href="#keunggulan" class="hover:text-red-500 transition mobile-link">KEUNGGULAN</a>
-        <a href="#proyek" class="hover:text-red-500 transition mobile-link">PROYEK</a>
-        <a href="#kontak" class="hover:text-red-500 transition mobile-link">HUBUNGI</a>
-        <a href="https://wa.me/6282131111185" class="text-lg font-bold text-red-500 mt-8 mobile-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp Kami</a>
+    <div id="mobile-menu" class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center text-white gap-8">
+        <a href="#keunggulan" class="text-2xl font-bold tech-font mobile-link">KEUNGGULAN</a>
+        <a href="#galeri" class="text-2xl font-bold tech-font mobile-link">GALERI</a>
+        <a href="#kontak" class="text-2xl font-bold tech-font mobile-link">LOKASI</a>
+        <a href="https://wa.me/6282131111185" class="text-xl text-red-500 font-bold mobile-link">WhatsApp Kami</a>
     </div>
 
-    <section class="relative h-screen w-full flex items-center px-6 md:px-24 pt-20 overflow-hidden bg-white">
-        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 items-center gap-12">
-            
-            <div class="md:col-span-7 z-20">
-                <h1 class="hero-title text-[14vw] md:text-[9vw] font-black mb-8 tracking-tighter text-black leading-none">
-                    <span class="block overflow-hidden"><span class="hero-text inline-block">ANTI</span></span>
-                    <span class="block overflow-hidden"><span class="hero-text inline-block text-red-600">MIRING.</span></span>
-                </h1>
-                <p class="text-lg md:text-2xl text-gray-600 max-w-xl leading-relaxed hero-desc opacity-0">
-                    Spesialis Pintu Harmonika Premium dengan metode konstruksi <strong>"Langkah Satu"</strong>. Lebih kekar, presisi, dan bergaransi puluhan tahun.
-                </p>
-                <div class="mt-12 hero-btn opacity-0">
-                    <a href="#proyek" class="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full text-sm font-bold hover:bg-gray-900 transition">
-                        Lihat Bukti Proyek <i class="fa-solid fa-arrow-down"></i>
-                    </a>
-                </div>
-            </div>
+    <section class="relative pt-40 pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-bold mb-8 uppercase tracking-widest animate-fade-in-up">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            Melayani Pengiriman Seluruh Indonesia
+        </div>
 
-            <div class="md:col-span-5 h-[50vh] md:h-[80vh] w-full relative reveal-holder rounded-[2rem] overflow-hidden shadow-2xl">
-                 <div class="reveal-block"></div>
-                 <img src="https://dongkrakusaha.com/uploads/Pintu20251130-111100-pintu-harmonika-anti-miring-bangkalan-madura.webp" 
-                     class="hero-img w-full h-full object-cover scale-110" 
-                     alt="Pintu Harmonika Anti Miring"
-                     onerror="this.src='https://images.unsplash.com/photo-1621847468516-1ed5d0656e0f?q=80&w=1200'">
+        <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight">
+            THE ULTIMATE <br>
+            <span class="text-steel">IRON FORTRESS.</span>
+        </h1>
+
+        <p class="text-gray-400 max-w-2xl text-lg mb-12 leading-relaxed mx-auto">
+            Pintu Harmonika Premium dengan metode konstruksi <strong>"Langkah Satu"</strong>. 
+            Presisi milimeter, anti miring, dan ketahanan baja murni untuk keamanan aset Anda.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 mb-20 items-center justify-center">
+            <a href="https://wa.me/6282131111185" class="btn-beam group">
+                <span class="btn-text flex items-center gap-2">
+                    KONSULTASI GRATIS <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </span>
+            </a>
+            <a href="#galeri" class="flex items-center gap-3 text-gray-300 hover:text-white transition font-medium border-b border-transparent hover:border-white pb-1">
+                <i class="fa-regular fa-images"></i> Lihat Bukti Terpasang
+            </a>
+        </div>
+
+        <div class="relative w-full max-w-6xl mx-auto rounded-3xl border border-white/10 bg-[#111] p-2 shadow-[0_0_100px_rgba(255,255,255,0.05)] reveal-wrap group">
+            <div class="reveal-curtain"></div>
+            <div class="relative overflow-hidden rounded-2xl aspect-video md:aspect-[21/9]">
+                <img src="https://dongkrakusaha.com/uploads/Pintu20251130-111100-pintu-harmonika-anti-miring-bangkalan-madura.webp" 
+                     class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700 scale-105 group-hover:scale-100 transition-transform"
+                     alt="Pintu Harmonika Premium"
+                     onerror="this.src='https://images.unsplash.com/photo-1535122146399-568f635848cb?q=80&w=1200'">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-left">
+                    <div class="text-xs font-bold text-red-500 tracking-widest mb-1">PROJECT SHOWCASE</div>
+                    <div class="text-2xl md:text-3xl font-bold tech-font text-white">BANGKALAN, MADURA</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="py-6 marquee-container">
-        <div class="marquee-content text-xl md:text-2xl display-font font-black tracking-wider">
-             METODE "LANGKAH SATU" • ANTI MIRING • LEBIH KEKAR • PRESISI TINGGI • GARANSI SERVIS • KIRIM KE SELURUH INDONESIA • 
-             METODE "LANGKAH SATU" • ANTI MIRING • LEBIH KEKAR • PRESISI TINGGI • GARANSI SERVIS • KIRIM KE SELURUH INDONESIA • 
-        </div>
-    </div>
-
-    <section id="keunggulan" class="py-32 px-6 bg-white relative z-20">
+    <section id="keunggulan" class="py-32 px-6 relative z-10">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-20 content-block">
-                <h2 class="text-4xl md:text-6xl font-black leading-tight max-w-2xl">
-                    MENGAPA KAMI <br> <span class="text-red-600">BERBEDA?</span>
-                </h2>
-                <p class="text-lg md:text-xl max-w-md leading-relaxed text-gray-600 mt-6 md:mt-0">
-                    Kami tidak menjual janji. Kami menjual kepastian konstruksi yang presisi.
-                </p>
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 tech-font">ENGINEERING EXCELLENCE</h2>
+                <p class="text-gray-400">Bukan sekadar pintu. Ini adalah sistem keamanan yang direkayasa.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="content-block group">
-                    <div class="w-20 h-20 bg-red-600 text-white flex items-center justify-center rounded-2xl mb-8 text-4xl">
-                        <i class="fa-solid fa-ruler-combined"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="cards-container">
+                
+                <div class="md:col-span-2 spotlight-card p-10 group min-h-[300px] flex flex-col justify-center">
+                    <div class="spotlight-content">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white mb-6 border border-white/10">
+                            <i class="fa-solid fa-ruler-combined text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">Metode "Langkah Satu"</h3>
+                        <p class="text-gray-400 text-lg leading-relaxed max-w-md">
+                            Teknologi perakitan presisi yang menjamin jarak antar plat konsisten. Hasilnya? Pintu berdiri tegak lurus sempurna, <span class="text-white font-bold">Anti Miring</span>, dan tidak akan macet meski dipakai puluhan tahun.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-black mb-4 display-font">METODE "LANGKAH SATU"</h3>
-                    <p class="text-gray-600 leading-relaxed">Teknologi perakitan khusus yang memastikan setiap daun pintu presisi milimeter. Hasilnya? Pintu tegak lurus sempurna, tidak akan pernah miring.</p>
                 </div>
-                <div class="content-block group">
-                     <div class="w-20 h-20 bg-black text-white flex items-center justify-center rounded-2xl mb-8 text-4xl">
-                        <i class="fa-solid fa-shield-halved"></i>
+
+                <div class="spotlight-card p-10 group flex flex-col justify-center">
+                    <div class="spotlight-content">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white mb-6 border border-white/10">
+                            <i class="fa-solid fa-cube text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Vul Murni</h3>
+                        <p class="text-gray-400">
+                            Ketebalan besi yang jujur. Tanpa manipulasi banci. Kokoh menahan benturan.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-black mb-4 display-font">MATERIAL MURNI</h3>
-                    <p class="text-gray-600 leading-relaxed">Besi pilihan dengan ketebalan (vul) yang jujur. Kami tidak memanipulasi spesifikasi demi harga murah. Kualitas adalah prioritas.</p>
                 </div>
-                <div class="content-block group">
-                     <div class="w-20 h-20 bg-gray-200 text-black flex items-center justify-center rounded-2xl mb-8 text-4xl">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                <div class="spotlight-card p-10 group flex flex-col justify-center">
+                    <div class="spotlight-content">
+                        <div class="w-14 h-14 rounded-2xl bg-red-600/20 flex items-center justify-center text-red-500 mb-6 border border-red-500/30">
+                            <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Garansi Servis</h3>
+                        <p class="text-gray-400">
+                            Dukungan purna jual penuh. Kami memastikan investasi keamanan Anda terjaga.
+                        </p>
                     </div>
-                    <h3 class="text-2xl font-black mb-4 display-font">GARANSI SERVICE</h3>
-                    <p class="text-gray-600 leading-relaxed">Investasi Anda aman bersama kami. Layanan purna jual responsif untuk memastikan pintu Anda berfungsi optimal selamanya.</p>
                 </div>
+
+                 <div class="md:col-span-2 spotlight-card p-10 group flex items-center relative overflow-hidden">
+                    <div class="spotlight-content z-10 w-full md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-3">Jangkauan Nasional</h3>
+                        <p class="text-gray-400 mb-6">
+                            Dari Jawa Timur hingga Papua. Kami siap mengirim dan melakukan instalasi di lokasi Anda dengan tim ahli.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-white/5 rounded text-xs text-gray-300 border border-white/10">Surabaya</span>
+                            <span class="px-3 py-1 bg-white/5 rounded text-xs text-gray-300 border border-white/10">Malang</span>
+                            <span class="px-3 py-1 bg-white/5 rounded text-xs text-gray-300 border border-white/10">Makassar</span>
+                            <span class="px-3 py-1 bg-white/5 rounded text-xs text-gray-300 border border-white/10">Jayapura</span>
+                        </div>
+                    </div>
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 opacity-20 text-[150px] md:text-[200px] text-white pointer-events-none">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="proyek" class="py-32 bg-[#111] text-white">
+    <section id="galeri" class="py-20 bg-[#0a0a0a] border-y border-white/5">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-20 text-center content-block">
-                <h2 class="text-4xl md:text-6xl font-black display-font mb-6">BUKTI KUALITAS</h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Lihat bagaimana pintu kami terpasang dengan presisi di lokasi klien.</p>
-            </div>
-
-            <div class="relative h-[70vh] w-full rounded-[3rem] overflow-hidden mb-20 content-block group">
-                <div class="absolute inset-0 bg-black/30 z-10 group-hover:bg-black/10 transition-all duration-700"></div>
-                <img src="https://dongkrakusaha.com/gambarbebas/1140420251130-102711_pintu-harmonika-kekar-anti-miring-bangkalan-02.jpg" 
-                     class="w-full h-full object-cover parallax-img scale-110" alt="Proyek Bangkalan"
-                     onerror="this.src='https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=1200'">
-                <div class="absolute bottom-12 left-12 z-20">
-                    <h3 class="text-4xl font-black display-font mb-2">PROJECT BANGKALAN</h3>
-                    <p class="text-red-500 font-bold">Madura, Jawa Timur</p>
-                </div>
-            </div>
-
-            <div class="relative h-[70vh] w-full rounded-[3rem] overflow-hidden content-block group">
-                 <div class="absolute inset-0 bg-black/30 z-10 group-hover:bg-black/10 transition-all duration-700"></div>
-                <img src="https://dongkrakusaha.com/gambarbebas/1140420251226-043136_pintu-harmonika-malang-pasuruan-custom-elegan-anti-miring-langkah-satu-04.jpg" 
-                     class="w-full h-full object-cover parallax-img scale-110" alt="Proyek Malang"
-                     onerror="this.src='https://images.unsplash.com/photo-1590486803833-1c5dc8ce34ac?q=80&w=1200'">
-                <div class="absolute bottom-12 left-12 z-20">
-                    <h3 class="text-4xl font-black display-font mb-2">PROJECT MALANG</h3>
-                    <p class="text-red-500 font-bold">Jawa Timur</p>
-                </div>
-            </div>
-            
-            <div class="mt-20 text-center content-block">
-                <a href="https://wa.me/6282131111185?text=Halo%20Admin,%20boleh%20lihat%20foto%20proyek%20lainnya?" class="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-sm font-bold hover:bg-gray-200 transition">
-                    Minta Foto Proyek Lainnya <i class="fa-brands fa-whatsapp"></i>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <h2 class="text-3xl md:text-5xl font-black tech-font">BUKTI INSTALASI</h2>
+                <a href="https://wa.me/6282131111185" class="text-gray-400 hover:text-white mt-4 md:mt-0 flex items-center gap-2 transition">
+                    Lihat Katalog Lengkap <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="reveal-wrap aspect-video group cursor-pointer">
+                    <div class="reveal-curtain"></div>
+                    <img src="https://dongkrakusaha.com/gambarbebas/1140420251130-102711_pintu-harmonika-kekar-anti-miring-bangkalan-02.jpg" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="Project 1"
+                         onerror="this.src='https://images.unsplash.com/photo-1590486803833-1c5dc8ce34ac?q=80&w=800'">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-xl font-bold tracking-widest border-b-2 border-red-500 pb-1">LIHAT DETAIL</span>
+                    </div>
+                </div>
+                <div class="reveal-wrap aspect-video group cursor-pointer">
+                    <div class="reveal-curtain"></div>
+                    <img src="https://dongkrakusaha.com/gambarbebas/1140420251226-043136_pintu-harmonika-malang-pasuruan-custom-elegan-anti-miring-langkah-satu-04.jpg" 
+                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="Project 2"
+                         onerror="this.src='https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=800'">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-xl font-bold tracking-widest border-b-2 border-red-500 pb-1">LIHAT DETAIL</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="kontak" class="bg-white text-black py-32 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center content-block">
+    <section id="kontak" class="pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
             <div>
-                <h2 class="text-4xl md:text-6xl font-black mb-8 display-font">KONSULTASI <br> GRATIS</h2>
-                <p class="mb-12 text-xl text-gray-600 leading-relaxed">
-                    Jangan ragu. Hubungi kami untuk survei lokasi atau sekadar tanya harga. Kami siap melayani Anda.
-                </p>
-                <div class="space-y-6 text-lg font-medium">
-                    <a href="https://goo.gl/maps/xxxxxxxx" target="_blank" class="flex items-start gap-6 p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition">
-                        <i class="fa-solid fa-location-dot text-red-600 text-2xl mt-1"></i> 
-                        <span>Perumahan Griya Trisna Asri Blok K No. 06, Mojotrisno, Mojoagung, Jombang</span>
-                    </a>
-                    <a href="https://wa.me/6282131111185" class="flex items-center gap-6 p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition">
-                        <i class="fa-brands fa-whatsapp text-red-600 text-2xl"></i> 
-                        <span>0821-3111-1185 / 0857-3249-4667</span>
-                    </a>
+                <h2 class="text-3xl font-black mb-6">VISIT WORKSHOP</h2>
+                <div class="space-y-6 text-gray-400">
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-location-dot text-white mt-1"></i>
+                        <p>Perumahan Griya Trisna Asri Blok K No. 06,<br>Mojotrisno, Mojoagung, Jombang.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-phone text-white mt-1"></i>
+                        <p>0821-3111-1185 / 0857-3249-4667</p>
+                    </div>
+                    <div class="flex gap-4 mt-8">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="h-[500px] w-full rounded-[3rem] overflow-hidden shadow-xl relative">
-                <iframe src="http://googleusercontent.com/maps.google.com/4" 
-                width="100%" height="100%" style="border:0; filter: grayscale(100%) contrast(1.1);" allowfullscreen="" loading="lazy"></iframe>
-                 <div class="absolute bottom-8 left-8 bg-white px-6 py-3 rounded-full font-bold shadow-md flex items-center gap-2">
-                    <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span> Workshop Jombang
-                </div>
+            <div class="h-[300px] w-full rounded-2xl overflow-hidden border border-white/10 relative">
+                <iframe src="http://googleusercontent.com/maps.google.com/5" 
+                width="100%" height="100%" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy"></iframe>
             </div>
+        </div>
+
+        <div class="text-center text-gray-600 text-sm border-t border-white/5 pt-8">
+            <p>&copy; 2026 UD. LESTARI JAYA. Powered by CiledugPromo Network.</p>
         </div>
     </section>
 
-    <footer class="bg-[#111] text-white py-12 px-6 text-center">
-        <p class="text-gray-500 font-medium">© 2026 UD. LESTARI JAYA. All Rights Reserved.</p>
-    </footer>
-
-    <a href="https://wa.me/6282131111185?text=Halo%20UD.Lestari%20Jaya,%20saya%20mau%20tanya%20harga%20pintu%20harmonika." 
-       class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-red-600 text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:rotate-12 group">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    <a href="https://wa.me/6282131111185?text=Halo%20UD.Lestari%20Jaya,%20saya%20mau%20konsultasi%20pintu." 
+       class="fixed bottom-8 right-8 z-[100] group">
+        <div class="relative flex items-center justify-center">
+            <div class="absolute inset-0 rounded-full bg-green-500 blur-xl opacity-40 animate-pulse"></div>
+            <div class="relative w-16 h-16 bg-[#111] border border-green-500/50 rounded-full flex items-center justify-center text-green-500 shadow-2xl hover:scale-110 transition-transform duration-300">
+                <i class="fa-brands fa-whatsapp text-3xl"></i>
+            </div>
+        </div>
     </a>
 
     <script>
-        // MOBILE MENU LOGIC
+        // 1. MOUSE TRACKING SPOTLIGHT
+        const cards = document.querySelectorAll('.spotlight-card');
+        const container = document.getElementById('cards-container');
+        if(container) {
+            container.onmousemove = e => {
+                for(const card of cards) {
+                    const rect = card.getBoundingClientRect(),
+                          x = e.clientX - rect.left,
+                          y = e.clientY - rect.top;
+                    card.style.setProperty("--mouse-x", `${x}px`);
+                    card.style.setProperty("--mouse-y", `${y}px`);
+                }
+            };
+        }
+
+        // 2. ANIMATIONS (GSAP)
+        gsap.registerPlugin(ScrollTrigger);
+
+        window.addEventListener('load', () => {
+            document.getElementById('main-body').classList.remove('opacity-0');
+            
+            // Hero Animations
+            const tl = gsap.timeline();
+            tl.to(".reveal-curtain", { height: "0%", duration: 1.2, ease: "power4.out" })
+              .from("h1", { y: 50, opacity: 0, duration: 1, ease: "power3.out" }, "-=0.5")
+              .from(".btn-beam", { scale: 0.8, opacity: 0, duration: 0.8, ease: "back.out(1.7)" }, "-=0.5");
+
+            // Bento Grid Stagger
+            gsap.utils.toArray('.spotlight-card').forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: { trigger: card, start: "top 90%" },
+                    y: 50, opacity: 0, duration: 0.8, ease: "power2.out", delay: i * 0.1
+                });
+            });
+
+            // Image Reveals
+             gsap.utils.toArray('.reveal-wrap').forEach(wrap => {
+                const curtain = wrap.querySelector('.reveal-curtain');
+                gsap.to(curtain, {
+                    width: "0%", duration: 1, ease: "power4.inOut",
+                    scrollTrigger: { trigger: wrap, start: "top 70%" }
+                });
+            });
+        });
+
+        // 3. MOBILE MENU
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -239,53 +404,16 @@
                 menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
             } else {
                 mobileMenu.classList.remove('open');
-                menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                menuBtn.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
             }
         });
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 isMenuOpen = false;
                 mobileMenu.classList.remove('open');
-                menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                menuBtn.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
             });
         });
-
-        // ANIMATIONS
-        gsap.registerPlugin(ScrollTrigger);
-
-        window.addEventListener('load', () => {
-            document.getElementById('main-body').classList.remove('opacity-0');
-            initAnimations();
-        });
-
-        function initAnimations() {
-            // HERO GONG REVEAL
-            const tl = gsap.timeline();
-            tl.to(".reveal-block", { xPercent: 100, duration: 1.2, ease: "expo.inOut" })
-              .from(".hero-text", { yPercent: 100, duration: 1, stagger: 0.1, ease: "power4.out" }, "-=0.8")
-              .to(".hero-desc", { opacity: 1, y: 0, duration: 1 }, "-=0.5")
-              .to(".hero-btn", { opacity: 1, y: 0, duration: 1 }, "-=0.8")
-              .from(".hero-img", { scale: 1.2, duration: 1.5, ease: "power2.out" }, "-=1.5");
-
-            // CONTENT REVEAL
-            gsap.utils.toArray('.content-block').forEach(block => {
-                gsap.from(block, { y: 50, opacity: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: block, start: "top 85%" } });
-            });
-
-            // PARALLAX FOTO BESAR
-             gsap.utils.toArray('.parallax-img').forEach(img => {
-                gsap.to(img, {
-                    yPercent: 15,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: img.parentElement,
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: true
-                    }
-                });
-            });
-        }
     </script>
 </body>
 </html>
