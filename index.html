@@ -77,6 +77,9 @@
             color: #000; 
             font-weight: 800; 
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+            /* Fix Layering */
+            position: relative;
+            z-index: 50;
         }
     </style>
 </head>
@@ -118,37 +121,38 @@
         </a>
     </div>
 
-    <section class="relative h-screen w-full flex items-center bg-black overflow-hidden pt-16">
-        <div class="absolute inset-0 z-0">
+    <section class="relative h-screen w-full flex items-center bg-black overflow-hidden pt-32 md:pt-20"> <div class="absolute inset-0 z-0">
             <img src="./pintu-harmonika-anti-miring-ud-lestari-jaya-jatim.jpg" 
                  class="w-full h-full object-cover opacity-40 scale-105 animate-[pulse_15s_ease-in-out_infinite]" 
                  alt="Pintu Harmonika UD Lestari Jaya"
                  onerror="this.onerror=null; this.src='./project1.jpg';"> 
         </div>
         <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-transparent z-10"></div>
-        <div class="relative z-20 max-w-7xl mx-auto px-6 pt-20 h-full flex items-center grid grid-cols-1 md:grid-cols-2">
-            <div class="hero-content">
-                <div class="inline-flex items-center gap-2 garansi-badge px-6 py-2 rounded-full mb-6 text-sm md:text-base animate-pulse transform hover:scale-105 transition">
+        <div class="relative z-20 max-w-7xl mx-auto px-6 h-full flex items-center grid grid-cols-1 md:grid-cols-2">
+            
+            <div class="hero-content relative z-30">
+                
+                <div class="inline-flex items-center gap-2 garansi-badge px-6 py-2 rounded-full mb-10 md:mb-6 text-sm md:text-base animate-pulse transform hover:scale-105 transition shadow-2xl relative z-50">
                     <i class="fa-solid fa-star"></i> JAMINAN GARANSI 10 TAHUN <i class="fa-solid fa-star"></i>
                 </div>
                 
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 relative z-30">
                     PUSAT PINTU HARMONIKA <br> UD. LESTARI JAYA: <br>
                     <span class="text-red-600 text-glow">SPESIALIS ANTI MIRING & KEKAR.</span>
                 </h1>
                 
-                <p class="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
+                <p class="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl relative z-30">
                     Jangan biarkan aset Anda tidak aman. Pilih yang pasti <strong>Langkah Satu!</strong> 
                     Gratis Konsultasi & Survey untuk wilayah Jombang, Mojokerto, Surabaya, Malang, dan sekitarnya.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-col sm:flex-row gap-4 relative z-30">
                     <a href="https://wa.me/6282131111185?text=Halo%20Admin,%20saya%20mau%20konsultasi%20harga." class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded font-bold text-center transition flex items-center justify-center gap-2 group shadow-xl">
                         CEK HARGA PER METER <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                     </a>
                 </div>
                 
-                <div class="mt-8 flex gap-6 text-sm font-semibold text-gray-400">
+                <div class="mt-8 flex gap-6 text-sm font-semibold text-gray-400 relative z-30">
                     <span class="flex items-center gap-2"><i class="fa-solid fa-certificate text-yellow-500"></i> Garansi 10 Tahun</span>
                     <span class="flex items-center gap-2"><i class="fa-solid fa-wrench text-gray-300"></i> Teknisi Ahli</span>
                     <span class="flex items-center gap-2"><i class="fa-solid fa-truck-fast text-red-500"></i> Kirim Nasional</span>
@@ -307,10 +311,9 @@
             </div>
             
             <div class="h-[350px] bg-white/5 rounded-xl overflow-hidden relative shadow-lg border border-white/10">
-                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d506230.58222040837!2d112.348846!3d-7.582987999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e786c8628a3aaab%3A0x5bf39968c6f6a8f4!2sPINTU%20HARMONlKA!5e0!3m2!1sid!2sid!4v1768519262690!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                </div>
+            </div>
         </div>
         
         <div class="text-center border-t border-white/5 pt-8 px-6">
