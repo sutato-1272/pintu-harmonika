@@ -151,12 +151,13 @@
         }
 
         /* =========================================
-           JARVIS CSS: TITAN PROTOCOL V14 (DARK ADAPTED)
+           JARVIS CSS: TITAN PROTOCOL V15 & MOBILE PROTECT
            ========================================= */
         @media (max-width: 768px) { 
             body { padding-bottom: 120px !important; } 
         }
 
+        /* VOICE FAQ */
         .jarvis-faq-container { max-width: 850px; margin: 0 auto 60px; padding: 0 5%; font-family: 'Plus Jakarta Sans', sans-serif; }
         .jarvis-faq-item { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; margin-bottom: 15px; border-left: 4px solid #dc2626; transition: 0.3s; }
         .jarvis-faq-item:hover { border-color: #dc2626; box-shadow: 0 10px 30px rgba(220, 38, 38, 0.1); }
@@ -169,6 +170,7 @@
         .jarvis-cta-btn { display: inline-block; background-color: #22c55e; color: white; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; text-align: center; width: 100%; transition: 0.3s; }
         .jarvis-cta-btn:hover { background-color: #16a34a; }
 
+        /* CHAT AI UI */
         .jarvis-chat-wrapper { max-width: 850px; margin: 40px auto 60px; background: rgba(30, 41, 59, 0.9); border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); padding: 0 5%; width: 90%; font-family: 'Plus Jakarta Sans', sans-serif; }
         .jarvis-chat-header { background: linear-gradient(90deg, #0f172a, #1e293b); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 15px 20px; display: flex; align-items: center; gap: 15px; font-weight: bold; margin: 0 -6%; }
         .jarvis-chat-header img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid #dc2626; }
@@ -183,17 +185,20 @@
         .jarvis-chat-send { background: #dc2626; color: #fff; border: none; padding: 12px 25px; border-radius: 30px; cursor: pointer; font-weight: 800; transition: 0.3s; }
         .jarvis-chat-send:hover { background: #b91c1c; }
 
+        /* FOOTER BRIDGE TEXT */
         .jarvis-footer-injection { max-width: 900px; margin: 0 auto; text-align: center; }
         .jarvis-footer-text { font-size: 0.95rem; color: #94a3b8; line-height: 1.8; margin-bottom: 15px; text-align: justify; }
         .jarvis-footer-text a { color: #dc2626; font-weight: bold; text-decoration: none; border-bottom: 1px dashed #dc2626; transition: 0.3s; }
         .jarvis-footer-text a:hover { color: #fff; border-bottom-style: solid; }
 
+        /* AGENCY CREDIT (DESAIN SILUMAN & HOVER MENYALA) */
         .jarvis-agency-credit { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); }
         .jarvis-agency-credit p:first-child { color: #475569; font-size: 0.9rem; margin-bottom: 5px; }
-        .jarvis-agency-credit p:last-child { color: #64748b; font-size: 0.85rem; }
-        .jarvis-agency-link { color: #64748b; text-decoration: none; transition: all 0.3s ease; }
-        .jarvis-agency-link:hover { color: #dc2626; font-weight: bold; text-shadow: 0 0 8px rgba(220, 38, 38, 0.4); }
+        .jarvis-agency-credit p:last-child { color: #334155; font-size: 0.85rem; }
+        .jarvis-agency-link { color: #334155; text-decoration: none; transition: all 0.3s ease; }
+        .jarvis-agency-link:hover { color: #dc2626 !important; font-weight: bold; } /* MENYALA MERAH KETIKA DIHOVER */
 
+        /* AI TRAP BOTTOM RIGHT */
         .jarvis-ai-trap { position: fixed; bottom: 110px; right: 30px; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 999; box-shadow: 0 0 20px rgba(220, 38, 38, 0.4); animation: jarvis-pulse 2s infinite; background: #0f172a; border: 2px solid #dc2626; transition: 0.3s; }
         .jarvis-ai-trap:hover { transform: scale(1.1); }
         .jarvis-ai-trap img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; }
@@ -217,8 +222,8 @@
             <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-300">
                 <a href="#keunggulan" class="hover:text-red-500 transition">KEUNGGULAN</a>
                 <a href="#produk" class="hover:text-red-500 transition">GALERI</a>
-                <a href="#faq-seo" class="hover:text-red-500 transition">INFO</a>
                 <a href="#omni-form" class="hover:text-red-500 transition">PESAN</a>
+                <a href="#faq-seo" class="hover:text-red-500 transition">INFO</a>
             </div>
             <a href="https://wa.me/6282131111185?text=Halo%20UD.Lestari%20Jaya,%20saya%20tertarik%20Promo%20Pintu%20Harmonika." class="hidden md:flex items-center gap-2 bg-white text-red-700 hover:bg-gray-100 px-5 py-2.5 rounded font-bold text-sm transition shadow-lg">
                 <i class="fa-brands fa-whatsapp text-lg"></i> KONSULTASI WA
@@ -230,8 +235,9 @@
     <div id="mobile-menu" class="fixed inset-0 bg-[#0f172a] z-40 flex flex-col justify-center items-center gap-8 p-8">
         <a href="#keunggulan" class="text-2xl font-bold display-font hover:text-red-500 mobile-link">KEUNGGULAN</a>
         <a href="#produk" class="text-2xl font-bold display-font hover:text-red-500 mobile-link">GALERI FOTO</a>
-        <a href="#faq-seo" class="text-2xl font-bold display-font hover:text-red-500 mobile-link">INFO HARGA</a>
         <a href="#omni-form" class="text-2xl font-bold display-font hover:text-red-500 mobile-link">PESAN ONLINE</a>
+        <a href="#faq-seo" class="text-2xl font-bold display-font hover:text-red-500 mobile-link">INFO HARGA</a>
+        <a href="#lokasi" class="text-2xl font-bold display-font hover:text-red-500 mobile-link">LOKASI KAMI</a>
         <a href="https://wa.me/6282131111185" class="mt-4 w-full text-center bg-green-600 py-4 rounded font-bold text-white mobile-link text-xl shadow-xl">
             <i class="fa-brands fa-whatsapp"></i> CHAT WHATSAPP
         </a>
@@ -276,6 +282,76 @@
         </div>
     </section>
 
+    <section id="keunggulan" class="py-24 bg-[#0f172a]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 display-font">MENGAPA KONTRAKTOR MEMILIH KAMI?</h2>
+                <p class="text-gray-400">Kualitas UD. LESTARI JAYA: Pintu Harmonika Terbaik di Kelasnya.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-[#1e293b] p-8 rounded-xl relative overflow-hidden group">
+                    <i class="fa-solid fa-ruler-combined text-4xl text-red-500 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-3 display-font">METODE "LANGKAH SATU"</h3>
+                    <p class="text-gray-400 leading-relaxed">Teknologi perakitan presisi. Pintu berdiri tegak lurus, tidak miring, dan rel tidak mudah anjlok.</p>
+                </div>
+                <div class="feature-card bg-[#1e293b] p-8 rounded-xl relative overflow-hidden group border-yellow-500/30">
+                    <i class="fa-solid fa-medal text-4xl text-yellow-500 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-3 text-yellow-500 display-font">GARANSI 10 TAHUN</h3>
+                    <p class="text-gray-400 leading-relaxed">Kami sangat yakin dengan kualitas bahan Vul Murni kami. Jaminan konstruksi kokoh hingga 10 tahun pemakaian wajar.</p>
+                </div>
+                <div class="feature-card bg-[#1e293b] p-8 rounded-xl relative overflow-hidden group">
+                    <i class="fa-solid fa-palette text-4xl text-red-500 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-3 display-font">CUSTOM WARNA</h3>
+                    <p class="text-gray-400 leading-relaxed">Sesuaikan warna pintu dengan branding toko Anda. Cat tahan lama dan anti karat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="py-24 bg-black relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-2 display-font">BUKTI NYATA DI LAPANGAN</h2>
+                    <p class="text-gray-400">Dokumentasi asli pemasangan tim kami di berbagai lokasi.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-lg aspect-video">
+                    <img src="./project1.jpg" alt="Pintu Harmonika Malang" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div><p class="text-red-500 text-xs font-bold tracking-widest mb-1">MALANG</p><h3 class="text-xl font-bold display-font">RUKO 7 UNIT PANDANWANGI</h3></div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg aspect-video">
+                    <img src="./project3.jpg" alt="Pintu Harmonika Blitar" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div><p class="text-red-500 text-xs font-bold tracking-widest mb-1">BLITAR</p><h3 class="text-xl font-bold display-font">TANJUNG SARI (4 UNIT)</h3></div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg aspect-video">
+                    <img src="./project4.jpg" alt="Pintu Harmonika Pasuruan" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div><p class="text-red-500 text-xs font-bold tracking-widest mb-1">JEMBER</p><h3 class="text-xl font-bold display-font">PASAR KENCONG (400 UNIT)</h3></div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg aspect-video">
+                    <img src="./project5.jpg" alt="Pintu Harmonika Sampang" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div><p class="text-red-500 text-xs font-bold tracking-widest mb-1">SAMPANG</p><h3 class="text-xl font-bold display-font">BANYUATES (11 UNIT)</h3></div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg aspect-video">
+                    <img src="./project6.jpg" alt="Pintu Harmonika Bangkalan" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div><p class="text-red-500 text-xs font-bold tracking-widest mb-1">BANGKALAN</p><h3 class="text-xl font-bold display-font">DEPAN SPBU BLEGA</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="omni-form" class="py-24 relative overflow-hidden" style="background-color: #0f172a; border-bottom: 1px solid rgba(255,255,255,0.05);">
         <div class="max-w-3xl mx-auto px-6 relative z-10">
             <div class="bg-[#1e293b] p-8 md:p-12 rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden">
@@ -314,33 +390,7 @@
         </div>
     </section>
 
-    <section id="keunggulan" class="py-24 bg-[#0f172a]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold mb-4 display-font">MENGAPA KONTRAKTOR MEMILIH KAMI?</h2>
-                <p class="text-gray-400">Kualitas UD. LESTARI JAYA: Pintu Harmonika Terbaik di Kelasnya.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="feature-card bg-[#1e293b] p-8 rounded-xl relative overflow-hidden group">
-                    <i class="fa-solid fa-ruler-combined text-4xl text-red-500 mb-6"></i>
-                    <h3 class="text-2xl font-bold mb-3 display-font">METODE "LANGKAH SATU"</h3>
-                    <p class="text-gray-400 leading-relaxed">Teknologi perakitan presisi. Pintu berdiri tegak lurus, tidak miring, dan rel tidak mudah anjlok.</p>
-                </div>
-                <div class="feature-card bg-[#1e293b] p-8 rounded-xl relative overflow-hidden group border-yellow-500/30">
-                    <i class="fa-solid fa-medal text-4xl text-yellow-500 mb-6"></i>
-                    <h3 class="text-2xl font-bold mb-3 text-yellow-500 display-font">GARANSI 10 TAHUN</h3>
-                    <p class="text-gray-400 leading-relaxed">Kami sangat yakin dengan kualitas bahan Vul Murni kami. Jaminan konstruksi kokoh hingga 10 tahun pemakaian wajar.</p>
-                </div>
-                <div class="feature-card bg-[#1e293b] p-8 rounded-xl relative overflow-hidden group">
-                    <i class="fa-solid fa-palette text-4xl text-red-500 mb-6"></i>
-                    <h3 class="text-2xl font-bold mb-3 display-font">CUSTOM WARNA</h3>
-                    <p class="text-gray-400 leading-relaxed">Sesuaikan warna pintu dengan branding toko Anda. Cat tahan lama dan anti karat.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="jarvis-faq-container reveal pt-10">
+    <section class="jarvis-faq-container reveal pt-16">
         <h2 class="text-3xl font-bold display-font text-center mb-2">Tanya Jawab <span class="text-red-600">Pakar Harmonika</span></h2>
         <p class="text-gray-400 text-center mb-10">Solusi Cepat Seputar Pabrikasi Pintu Besi & Holding Gate</p>
         
@@ -418,12 +468,17 @@
                     <h3 class="text-lg font-bold text-white mb-2">Jasa Pasang Pintu Harmonika Surabaya & Malang</h3>
                     <p>Mencari <strong>jasa pasang pintu harmonika Surabaya</strong> atau Malang? Kami siap melayani Anda. Tim kami berpengalaman menangani proyek di Sidoarjo, Gresik, Pasuruan, hingga Batu. Produk kami meliputi Folding Gate Galvalum, Pintu Harmonika KW1, KW Super, dan Ekonomis. Dapatkan penawaran <strong>harga pintu harmonika per meter</strong> termurah dengan kualitas plat besi vul murni yang tebal dan tahan lama.</p>
                 </div>
+                <div class="bg-[#1e293b] p-6 rounded-xl border border-white/5">
+                    <h3 class="text-lg font-bold text-white mb-2">Service Pintu Harmonika & Pengiriman Luar Pulau</h3>
+                    <p>Selain pemasangan baru, kami juga melayani <strong>service pintu harmonika</strong> macet, anjlok, atau rusak kunci. Layanan kami mencakup seluruh Jawa Timur. Untuk pelanggan di luar pulau, kami menyediakan paket pengiriman pintu harmonika ke Kalimantan (Banjarmasin, Balikpapan), Sulawesi (Makassar), Bali, NTB, NTT, hingga Papua. Pintu dikirim dalam kondisi siap pasang dengan panduan lengkap.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer id="lokasi" class="bg-[#0f172a] pt-10 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            
             <div>
                 <div class="flex items-center gap-3 mb-8">
                     <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center text-white font-bold">LJ</div>
@@ -432,9 +487,43 @@
                 <div class="space-y-6 text-gray-400">
                     <div class="flex items-start gap-4">
                         <i class="fa-solid fa-location-dot mt-1 text-red-500"></i>
-                        <p><strong class="text-white block mb-1">ALAMAT WORKSHOP:</strong>Perumahan Griya Trisna Asri Blok K No. 06,<br>Mojotrisno, Mojoagung, Jombang, Jawa Timur 61482.</p>
+                        <p>
+                            <strong class="text-white block mb-1">ALAMAT WORKSHOP:</strong>
+                            Perumahan Griya Trisna Asri Blok K No. 06,<br>Mojotrisno, Mojoagung, Jombang, Jawa Timur 61482.
+                        </p>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <i class="fa-solid fa-globe mt-1 text-blue-400"></i>
+                        <p>
+                            <strong class="text-white block mb-1">WEBSITE UTAMA:</strong>
+                            <a href="https://pintuharmonika.net" target="_blank" class="text-blue-400 hover:text-white underline font-bold text-lg">
+                                https://pintuharmonika.net
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <i class="fa-brands fa-whatsapp text-red-500 text-xl"></i>
+                        <p>0821-3111-1185 / 0857-3249-4667</p>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10 mt-6">
+                        <p class="text-sm text-gray-500 mb-4 font-bold tracking-widest">LIHAT VIDEO PROYEK KAMI:</p>
+                        <div class="flex gap-4">
+                            <a href="https://www.youtube.com/@DwiSulistyoPintuharmonika/shorts" target="_blank" class="w-12 h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition text-white group" title="Lihat Youtube">
+                                <i class="fa-brands fa-youtube text-2xl group-hover:scale-110 transition-transform"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@dwisulistyop" target="_blank" class="w-12 h-12 bg-white/5 border border-white/10 rounded flex items-center justify-center hover:bg-white hover:text-black hover:border-white transition text-white group" title="Lihat Tiktok">
+                                <i class="fa-brands fa-tiktok text-2xl group-hover:scale-110 transition-transform"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="h-[350px] bg-white/5 rounded-xl overflow-hidden relative shadow-lg border border-white/10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15814.17290940733!2d112.3482!3d-7.5645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e786b000572eab3%3A0x6b772421319c5c16!2sPINTU%20HARMONIKA%20JOMBANG%20UD%20LESTARI%20JAYA!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         
